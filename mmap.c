@@ -380,21 +380,5 @@ u64 end = addr + length;
 }
 
 
-/**
- * make_hugepage system call implemenation
- */
-long vm_area_make_hugepage(struct exec_context *current, void *addr, u32 length, u32 prot, u32 force_prot)
-{	u64 end = addr + length;
-
-        
-	return 0;
-}
 
 
-/**
- * break_system call implemenation
- */
-int vm_area_break_hugepage(struct exec_context *current, void *addr, u32 length)
-{
-	return 0;
-}
